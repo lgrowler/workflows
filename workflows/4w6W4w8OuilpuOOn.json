@@ -1,0 +1,54 @@
+{
+  "id": "4w6W4w8OuilpuOOn",
+  "name": "My workflow 7",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "c34ff0a0-5bde-4ea2-8c6e-64c4f6b31cf6",
+      "name": "When clicking ‘Test workflow’",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        900,
+        580
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "resource": "all",
+        "additionalFields": {}
+      },
+      "id": "2532907e-9deb-4b2a-bb97-17923753fe38",
+      "name": "Hacker News",
+      "type": "n8n-nodes-base.hackerNews",
+      "typeVersion": 1,
+      "position": [
+        1080,
+        580
+      ]
+    }
+  ],
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Hacker News",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "687bb289-e197-401c-90bf-8a1b1664c2f3",
+  "owner": {
+    "type": "team",
+    "teamId": "DVBJ8wZT2JDq2tD3",
+    "teamName": "PROJECT 2"
+  }
+}
